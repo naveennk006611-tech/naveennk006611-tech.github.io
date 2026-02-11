@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
     <title>Naveen Kumar S | Growth & Performance Marketer</title>
     <meta charset="UTF-8">
@@ -147,4 +149,149 @@
         }
 
     </style>
-</head>
+</head>    
+
+<body>
+    <div class="intro-animation">
+    <div class="character" id="character">
+        <img src="assets/character.png" alt="Character">
+        <div class="speech" id="speech">Hi 👋</div>
+    </div>
+</div>
+
+<div class="container hero">
+    <h1>Naveen Kumar S</h1>
+    <h2>Growth & Performance Marketing Specialist</h2>
+    <p>
+        Results-driven Digital Marketer with 3+ years of experience managing multi-platform
+        paid media campaigns across Meta, Google, TikTok, Snapchat, and affiliate networks.
+        Skilled in scaling e-commerce & lead generation with measurable ROI.
+    </p>
+
+    <a href="naveennk006611@gmail.com" class="button">Contact Me</a>
+    <a href="NK Resume - 1.pdf" class="button">Download Resume</a>
+</div>
+
+
+<div class="container">
+
+    <div class="section-title">Professional Experience</div>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>Growth Fusion – Senior Associate (Media Buyer)</h3>
+            <p class="highlight">July 2024 – Nov 2025 | Bengaluru</p>
+            <p>
+                Managed 6+ figure monthly ad spends across Meta, Google, TikTok,
+                Snapchat & NewsBreak. Scaled affiliate and D2C campaigns achieving
+                <span class="highlight">200%+ ROI</span>.
+            </p>
+            <p>
+                Implemented A/B testing, creative scaling systems, and budget pacing
+                strategies to ensure profitable growth.
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Unigage – Senior Associate</h3>
+            <p class="highlight">Aug 2022 – June 2024 | Bengaluru</p>
+            <p>
+                Executed full-funnel campaigns including media planning,
+                segmentation, tracking setup, and affiliate postback systems.
+            </p>
+            <p>
+                Optimized CTR, CVR & CPA using performance insights and
+                improved EPC across affiliate offers.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="section-title">Core Expertise</div>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>Paid Media Platforms</h3>
+            <p>
+                Meta Ads, Google Ads, TikTok, Snapchat,
+                NewsBreak, LinkedIn, X (Twitter), Pinterest
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Performance Strategy</h3>
+            <p>
+                Custom & Lookalike Audiences, CBO & Advantage+,
+                Creative Fatigue Control, Funnel Scaling,
+                CAC & ROAS Optimization
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Tracking & Analytics</h3>
+            <p>
+                Pixel & UTM Tracking, Voluum, Clickflare,
+                Redtrack, Looker Studio, Excel Analysis
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Naveen Kumar S | Performance Marketing Portfolio
+</footer>
+<script>
+// Intro Animation
+window.addEventListener("load", () => {
+
+    const character = document.getElementById("character");
+    const speech = document.getElementById("speech");
+    const introScreen = document.querySelector(".intro-animation");
+
+    setTimeout(() => {
+        character.style.transition = "all 1.5s ease";
+        character.style.transform = "translateY(0)";
+        character.style.opacity = "1";
+    }, 500);
+
+    setTimeout(() => {
+        speech.style.opacity = "1";
+    }, 2000);
+
+    setTimeout(() => {
+        character.style.transform = "translateX(400px)";
+    }, 3000);
+
+    setTimeout(() => {
+        introScreen.style.opacity = "0";
+        introScreen.style.transition = "opacity 1s ease";
+    }, 4500);
+
+    setTimeout(() => {
+        introScreen.style.display = "none";
+    }, 5500);
+});
+
+// Scroll Animation
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show');
+        }
+    });
+});
+
+document.querySelectorAll('.card, .section-title').forEach(el => {
+    observer.observe(el);
+});
+</script>
+
+</body>
+</html>
+
+CHECK THIS CODE
