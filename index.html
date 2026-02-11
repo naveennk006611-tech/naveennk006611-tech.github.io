@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Naveen Kumar S | Performance Marketing Specialist</title>
+    <title>Naveen Kumar S | Growth & Performance Marketer</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        html {
-            scroll-behavior: smooth;
-        }
+        html { scroll-behavior: smooth; }
 
         body {
             margin: 0;
             font-family: 'Segoe UI', sans-serif;
-            background-color: #0f0f0f;
+            background: #0c0c0c;
             color: #ffffff;
         }
 
@@ -23,49 +21,52 @@
             padding: 80px 20px;
         }
 
-        h1 {
-            font-size: 42px;
+        /* HERO */
+        .hero h1 {
+            font-size: 44px;
             margin-bottom: 10px;
             animation: fadeDown 1s ease forwards;
         }
 
-        h2 {
-            color: #00d4ff;
+        .hero h2 {
+            color: #00e0ff;
             margin-bottom: 20px;
-            animation: fadeDown 1.4s ease forwards;
+            animation: fadeDown 1.3s ease forwards;
         }
 
-        p {
-            color: #cccccc;
-            line-height: 1.6;
+        .hero p {
+            color: #aaa;
+            max-width: 700px;
+            animation: fadeDown 1.6s ease forwards;
         }
 
+        /* BUTTON */
         .button {
             display: inline-block;
-            padding: 12px 25px;
-            margin: 10px 10px 10px 0;
-            background: #00d4ff;
+            padding: 12px 28px;
+            margin: 20px 15px 0 0;
+            background: #00e0ff;
             color: #000;
             text-decoration: none;
-            border-radius: 6px;
+            border-radius: 8px;
             font-weight: bold;
-            transition: 0.3s;
-            box-shadow: 0 0 0px #00d4ff;
+            transition: all 0.3s ease;
         }
 
         .button:hover {
-            background: #00aacc;
-            box-shadow: 0 0 15px #00d4ff;
-            transform: translateY(-3px);
+            transform: translateY(-4px);
+            box-shadow: 0 0 20px #00e0ff;
+            background: #00bcd4;
         }
 
+        /* SECTION */
         .section-title {
-            margin-top: 70px;
             font-size: 28px;
-            border-left: 4px solid #00d4ff;
-            padding-left: 12px;
+            margin-top: 80px;
+            border-left: 4px solid #00e0ff;
+            padding-left: 15px;
             opacity: 0;
-            transform: translateY(30px);
+            transform: translateY(40px);
             transition: all 0.8s ease;
         }
 
@@ -74,53 +75,49 @@
             transform: translateY(0);
         }
 
-        .case-grid {
+        /* CARDS */
+        .card-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 25px;
             margin-top: 40px;
         }
 
-        .case-card {
-            background: #1a1a1a;
+        .card {
+            background: #161616;
             padding: 25px;
-            border-radius: 12px;
+            border-radius: 14px;
             transition: all 0.4s ease;
             opacity: 0;
-            transform: translateY(40px);
+            transform: translateY(50px);
         }
 
-        .case-card.show {
+        .card.show {
             opacity: 1;
             transform: translateY(0);
         }
 
-        .case-card:hover {
+        .card:hover {
             transform: translateY(-8px);
-            background: #222;
-            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+            background: #1e1e1e;
+            box-shadow: 0 15px 40px rgba(0,224,255,0.2);
         }
 
         .highlight {
-            color: #00d4ff;
+            color: #00e0ff;
             font-weight: bold;
         }
 
         footer {
             text-align: center;
-            padding: 50px;
-            color: #777;
+            padding: 60px 20px;
+            color: #666;
         }
 
+        /* ANIMATION */
         @keyframes fadeDown {
-            from {
-                opacity: 0;
-                transform: translateY(-40px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(-40px); }
+            to { opacity: 1; transform: translateY(0); }
         }
 
     </style>
@@ -128,45 +125,83 @@
 
 <body>
 
-<div class="container">
-
+<div class="container hero">
     <h1>Naveen Kumar S</h1>
-    <h2>Performance Marketing Specialist</h2>
-    <p>4+ Years Experience | Managed ₹1Cr+ Monthly Budget | D2C & Lead Gen Growth</p>
+    <h2>Growth & Performance Marketing Specialist</h2>
+    <p>
+        Results-driven Digital Marketer with 3+ years of experience managing multi-platform
+        paid media campaigns across Meta, Google, TikTok, Snapchat, and affiliate networks.
+        Skilled in scaling e-commerce & lead generation with measurable ROI.
+    </p>
 
     <a href="naveennk006611@gmail.com" class="button">Contact Me</a>
     <a href="NK Resume - 1.pdf" class="button">Download Resume</a>
+</div>
 
-    <div class="section-title">About Me</div>
-    <p>
-        I help D2C and product-based companies scale profitably using Meta Ads,
-        creative testing frameworks, funnel optimization, and contribution margin focused growth strategies.
-    </p>
 
-    <div class="section-title">Case Studies</div>
+<div class="container">
 
-    <div class="case-grid">
+    <div class="section-title">Professional Experience</div>
 
-        <div class="case-card">
-            <h3>Healthcare Lead Generation</h3>
-            <p><span class="highlight">Budget:</span> ₹1 Crore / Month</p>
-            <p><span class="highlight">Objective:</span> High-quality MRN leads</p>
-            <p>Reduced CPL by 38% through structured creative testing and audience expansion.</p>
-            <p><span class="highlight">Result:</span> 2.4X ROAS | Scaled to ₹1Cr Spend</p>
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>Growth Fusion – Senior Associate (Media Buyer)</h3>
+            <p class="highlight">July 2024 – Nov 2025 | Bengaluru</p>
+            <p>
+                Managed 6+ figure monthly ad spends across Meta, Google, TikTok,
+                Snapchat & NewsBreak. Scaled affiliate and D2C campaigns achieving
+                <span class="highlight">200%+ ROI</span>.
+            </p>
+            <p>
+                Implemented A/B testing, creative scaling systems, and budget pacing
+                strategies to ensure profitable growth.
+            </p>
         </div>
 
-        <div class="case-card">
-            <h3>D2C E-commerce Scaling</h3>
-            <p><span class="highlight">Goal:</span> Improve ROAS & Reduce CAC</p>
-            <p>Implemented fatigue control system and contribution margin tracking.</p>
-            <p><span class="highlight">Result:</span> 32% CAC Reduction | 1.8X Revenue Growth</p>
+        <div class="card">
+            <h3>Unigage – Senior Associate</h3>
+            <p class="highlight">Aug 2022 – June 2024 | Bengaluru</p>
+            <p>
+                Executed full-funnel campaigns including media planning,
+                segmentation, tracking setup, and affiliate postback systems.
+            </p>
+            <p>
+                Optimized CTR, CVR & CPA using performance insights and
+                improved EPC across affiliate offers.
+            </p>
         </div>
 
-        <div class="case-card">
-            <h3>Education Funnel Optimization</h3>
-            <p><span class="highlight">Objective:</span> Improve Lead Quality</p>
-            <p>Built segmented retargeting layers and optimized landing flow.</p>
-            <p><span class="highlight">Result:</span> 25% Higher Conversion Rate</p>
+    </div>
+
+
+    <div class="section-title">Core Expertise</div>
+
+    <div class="card-grid">
+
+        <div class="card">
+            <h3>Paid Media Platforms</h3>
+            <p>
+                Meta Ads, Google Ads, TikTok, Snapchat,
+                NewsBreak, LinkedIn, X (Twitter), Pinterest
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Performance Strategy</h3>
+            <p>
+                Custom & Lookalike Audiences, CBO & Advantage+,
+                Creative Fatigue Control, Funnel Scaling,
+                CAC & ROAS Optimization
+            </p>
+        </div>
+
+        <div class="card">
+            <h3>Tracking & Analytics</h3>
+            <p>
+                Pixel & UTM Tracking, Voluum, Clickflare,
+                Redtrack, Looker Studio, Excel Analysis
+            </p>
         </div>
 
     </div>
@@ -178,7 +213,6 @@
 </footer>
 
 <script>
-    // Scroll animation
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if(entry.isIntersecting){
@@ -187,7 +221,7 @@
         });
     });
 
-    document.querySelectorAll('.case-card, .section-title').forEach(el => {
+    document.querySelectorAll('.card, .section-title').forEach(el => {
         observer.observe(el);
     });
 </script>
