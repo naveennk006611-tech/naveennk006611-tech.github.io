@@ -1,0 +1,23 @@
+index.html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Naveen Kumar S | Portfolio</title>
+    <meta charset="UTF-8">
+</head>
+<body style="font-family: Arial; text-align: center; padding: 50px;">
+
+    <h1>Naveen Kumar S</h1>
+    <h2>Performance Marketing Specialist</h2>
+    <p>4+ Years Experience | Managed ₹1Cr+ Monthly Budget</p>
+
+    <hr>
+
+    <h3>About Me</h3>
+    <p>
+        I help D2C brands scale using Meta Ads, creative testing,
+        and contribution margin focused strategies.
+    </p>
+
+</body>
+</html>
